@@ -1,0 +1,24 @@
+{
+  "name": "google-gemini-api-playground",
+  "version": "1.0.0",
+  "description": "A hands-on playground repository to explore, experiment, and learn the Google Gemini AI API through small test projects and controlled experiments.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ASALOGAN/Google-Gemini-API-PlayGround.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ASALOGAN/Google-Gemini-API-PlayGround/issues"
+  },
+  "homepage": "https://github.com/ASALOGAN/Google-Gemini-API-PlayGround#readme",
+  "dependencies": {
+    "@google/genai": "1.34.0"
+  }
+}
