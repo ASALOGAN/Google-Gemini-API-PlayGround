@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gemini Usage Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <header class="header">
+    <h1>Gemini Usage Dashboard</h1>
+    <p>AI cost & token analytics</p>
+  </header>
+
+  <main class="container">
+
+    <!-- Summary Cards -->
+    <section class="cards">
+      <div class="card accent">
+        <span>Total Cost</span>
+        <strong id="totalCost">$0.00</strong>
+      </div>
+      <div class="card">
+        <span>Total Tokens</span>
+        <strong id="totalTokens">0</strong>
+      </div>
+      <div class="card">
+        <span>Thinking Tokens</span>
+        <strong id="thinkingTokens">0</strong>
+      </div>
+      <div class="card">
+        <span>Visible Output</span>
+        <strong id="visibleTokens">0</strong>
+      </div>
+    </section>
+
+    <!-- Controls -->
+    <section class="controls">
+      <label>
+        View:
+        <select id="viewSelector">
+          <option value="daily">Daily Cost</option>
+          <option value="perCall">Per Call</option>
+        </select>
+      </label>
+
+      <label id="dateFilter" class="hidden">
+        Date:
+        <select id="dateSelector"></select>
+      </label>
+    </section>
+
+    <!-- Charts -->
+    <section class="charts">
+      <div class="chart-card">
+        <h3>Cost Over Time</h3>
+        <canvas id="costChart"></canvas>
+      </div>
+
+      <div class="chart-card">
+        <h3>Token Distribution</h3>
+        <canvas id="tokenChart"></canvas>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="./dashboard.js"></script>
+</body>
+</html>
