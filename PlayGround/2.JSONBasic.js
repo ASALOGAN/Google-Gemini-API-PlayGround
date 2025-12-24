@@ -14,13 +14,12 @@ const main = async () => {
     contents: "Explain how AI works in a few words",
   });
 
-  console.log(`Gemini Response:\n${response.text}`);
+  console.log(response.text);
 
-  // Track usage
   const usageRecord = trackUsage({
     model: "gemini-2.5-flash",
     usage: response.usageMetadata,
-    caller: "1.BasicAPICall.js",
+    caller: "2.JSONBasic.js",
   });
 
   console.log("Usage recorded:", usageRecord);

@@ -3,3 +3,6 @@
 
 # Node modules
 node_modules/
+
+# usage JSONL Log
+usage/usage-log.jsonl
